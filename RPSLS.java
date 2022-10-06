@@ -5,6 +5,7 @@ public class RPSLS {
         
         Scanner sc = new Scanner(System.in);
 
+        boolean loop = true;
 
         boolean rock = false;
         boolean paper = false;
@@ -13,7 +14,7 @@ public class RPSLS {
         boolean spock = false;
 
         Boolean[] choiceList = {rock, scissors, paper, lizard, spock};
-        while (true) {
+        while (loop) {
             int compChoice = (int) (Math.random() * choiceList.length + 1);
             choiceList[compChoice] = true;
             
@@ -26,5 +27,7 @@ public class RPSLS {
 
 
         }
+    sc.close();
     }
+
 }
